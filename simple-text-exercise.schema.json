@@ -1,0 +1,51 @@
+{
+    "type": "object",
+    "properties": {
+        "points": {
+            "type": "number",
+            "format": "double"
+        },
+        "textsize": {
+            "type": "object",
+            "properties": {
+                "max": {
+                    "type": "integer",
+                    "format": "int64",
+                    "minimum": 1
+                },
+                "min": {
+                    "type": "number",
+                    "format": "double"
+                },
+                "unit": {
+                    "enum": [
+                        "characters",
+                        "words"
+                    ]
+                }
+            },
+            "required": [
+                "max",
+                "min",
+                "unit"
+            ]
+        },
+        "type": {
+            "enum": [
+                "simple-text"
+            ]
+        },
+        "shuffled": {
+            "type": "boolean"
+        },
+        "voting": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "points",
+        "textsize",
+        "type"
+    ],
+    "title": "simpletext/core"
+}

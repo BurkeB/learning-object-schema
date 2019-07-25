@@ -1,0 +1,42 @@
+{
+    "type": "object",
+    "properties": {
+        "type": {
+            "enum": [
+                "sorting"
+            ]
+        },
+        "answers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string"
+                    },
+                    "correct": {
+                        "type": "boolean"
+                    },
+                    "points": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                },
+                "required": [
+                    "text",
+                    "correct",
+                    "points"
+                ],
+                "title": "common/answer"
+            }
+        },
+        "shuffled": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "type",
+        "answers"
+    ],
+    "title": "sorting-question/core"
+}

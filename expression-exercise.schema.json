@@ -1,0 +1,46 @@
+{
+    "type": "object",
+    "properties": {
+        "expressions": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "text": {
+                        "type": "string"
+                    },
+                    "correct-points": {
+                        "type": "number",
+                        "format": "double"
+                    },
+                    "incorrect-points": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                },
+                "required": [
+                    "id",
+                    "text",
+                    "correct-points",
+                    "incorrect-points"
+                ],
+                "title": "learning-object-schema.exercise-types.expression/expression"
+            }
+        },
+        "type": {
+            "enum": [
+                "expression"
+            ]
+        },
+        "input-format": {}
+    },
+    "required": [
+        "expressions",
+        "type",
+        "input-format"
+    ],
+    "title": "expression-question/core"
+}

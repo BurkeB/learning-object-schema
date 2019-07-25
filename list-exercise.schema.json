@@ -1,0 +1,43 @@
+{
+    "type": "object",
+    "properties": {
+        "type": {
+            "enum": [
+                "list"
+            ]
+        },
+        "answers": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "text": {
+                        "type": "string"
+                    },
+                    "points": {
+                        "type": "number",
+                        "format": "double"
+                    },
+                    "missed-points": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                },
+                "required": [
+                    "text",
+                    "points",
+                    "missed-points"
+                ],
+                "title": "list-question/answer"
+            }
+        },
+        "ordered": {
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "type",
+        "answers"
+    ],
+    "title": "list-question/core"
+}

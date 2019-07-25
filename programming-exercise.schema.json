@@ -1,0 +1,53 @@
+{
+    "type": "object",
+    "properties": {
+        "language": {},
+        "unit-tests": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "testcode": {
+                        "type": "string"
+                    },
+                    "title": {
+                        "type": "string"
+                    },
+                    "correct-points": {
+                        "type": "number",
+                        "format": "double"
+                    },
+                    "incorrect-points": {
+                        "type": "number",
+                        "format": "double"
+                    }
+                },
+                "required": [
+                    "id",
+                    "testcode",
+                    "title",
+                    "correct-points",
+                    "incorrect-points"
+                ],
+                "title": "programming-question/unit-test"
+            }
+        },
+        "type": {
+            "enum": [
+                "programming"
+            ]
+        },
+        "code-template": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "language",
+        "unit-tests",
+        "type"
+    ],
+    "title": "programming-question/core"
+}
