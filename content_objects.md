@@ -7,3 +7,13 @@ layout: default
 
 # Content-Objects
 Work in progress
+
+<ul>
+{% for cobject in site.content_objects %}
+  <li>
+    <a href="{{ cobject.url }}">
+      {{ cobject.name }}
+    </a>
+  </li>
+{% endfor %}
+</ul>

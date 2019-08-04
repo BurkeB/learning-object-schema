@@ -6,7 +6,7 @@ layout: default
 ```
 
 ```
-{{ include lom_preview.html content="abc"}}
+{% include lom_preview.html content="abc" %}
 
 | Abstract            | Extensible | Status       | Identifiable | Custom Properties | Additional Properties |
 | ------------------- | ---------- | ------------ | ------------ | ----------------- | --------------------- |

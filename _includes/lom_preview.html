@@ -1,3 +1,8 @@
-<textarea name="name" rows="8" cols="80">
-  {{ include.content }}
-</textarea>
+<div id="{{include.preview_id}}">
+
+</div>
+<script type="text/javascript" src="/assets/js/showcase.js"></script>
+<script type="text/javascript">
+  var atom = decodeURI("{{ include.content | uri_escape }}");
+  lernmeister.components.showcase.init_showcase("{{include.preview_id}}", atom, "content-object");
+</script>
