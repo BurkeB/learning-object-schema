@@ -1,7 +1,7 @@
 ---
 title: Audio
 name: audio
-layout: default
+layout: content_object
 ---
 # Audio
 
@@ -11,7 +11,7 @@ layout: default
 | --------------------- | -------- | ------------ | -------- | ------------------------------------------ |
 | [id](#id)         | `string` | **Required** | No       | (this schema)                              |
 | [url](#url)         | `string` | **Required** | No       | (this schema)                              |
-| [type](#type)         | `string`   | **Required** | No       | (this schema)                              |
+| [type](#type)         | `enum` (EDN: key / JS: string)   | **Required** | No       | (this schema)                              |
 | `*`                   | any      | Additional   | Yes      | this schema _allows_ additional properties |
 
 
